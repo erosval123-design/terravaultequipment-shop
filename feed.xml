@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<channel>
+  <title>TerraVault Equipment</title><link>https://terravaultequipment.shop</link>
+  <description>Compact Machines. Serious Results.</description>
+  <item>
+    <g:id>bull-18x</g:id><g:title>BULL 18-X Mini Excavator</g:title>
+    <g:description>1.8-ton Kubota-powered excavator. Parker hydraulics. Variable track width. 36-month warranty. Free freight.</g:description>
+    <g:link>https://terravaultequipment.shop/products/bull-18x.html</g:link>
+    <g:image_link>https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg</g:image_link>
+    <g:price>15900.00 USD</g:price>
+    <g:availability>in stock</g:availability><g:condition>new</g:condition>
+    <g:brand>BULL</g:brand><g:mpn>BULL-18X</g:mpn>
+    <g:shipping><g:country>US</g:country><g:service>Freight</g:service><g:price>0 USD</g:price></g:shipping>
+  </item>
+  <item>
+    <g:id>huayee-hy480d</g:id><g:title>HUAYEE HY480D Mini Skid Steer</g:title>
+    <g:description>23HP ride-on wheel skid steer. Universal quick-attach. Full canopy. Free freight. $3,300 off list.</g:description>
+    <g:link>https://terravaultequipment.shop/products/huayee-hy480d.html</g:link>
+    <g:image_link>https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571</g:image_link>
+    <g:price>7999.00 USD</g:price>
+    <g:availability>in stock</g:availability><g:condition>new</g:condition>
+    <g:brand>HUAYEE</g:brand><g:mpn>HY480D</g:mpn>
+    <g:shipping><g:country>US</g:country><g:service>Freight</g:service><g:price>0 USD</g:price></g:shipping>
+  </item>
+  <item>
+    <g:id>mms-ms15pro</g:id><g:title>MMS MS15PRO Mini Excavator</g:title>
+    <g:description>CE/SGS/TUV/ISO certified 1.5-ton excavator. 360° rotation. Side swing boom. 13.5HP. $700 off list.</g:description>
+    <g:link>https://terravaultequipment.shop/products/mms-ms15pro.html</g:link>
+    <g:image_link>https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946</g:image_link>
+    <g:price>6899.00 USD</g:price>
+    <g:availability>in stock</g:availability><g:condition>new</g:condition>
+    <g:brand>MMS</g:brand><g:mpn>MS15PRO</g:mpn>
+    <g:shipping><g:country>US</g:country><g:service>Freight</g:service><g:price>0 USD</g:price></g:shipping>
+  </item>
+  <item>
+    <g:id>huayee-hy18b</g:id><g:title>HUAYEE HY18B Mini Excavator</g:title>
+    <g:description>14HP Kubota-powered 1.8-ton excavator. Hydraulic thumb. Side swing boom. Canopy. $2,700 off list.</g:description>
+    <g:link>https://terravaultequipment.shop/products/huayee-hy18b.html</g:link>
+    <g:image_link>https://cdn.shopify.com/s/files/1/0688/4517/4941/files/HY18B-mini-excavator-01_93727e78-d8e0-4bd5-9927-1afb62bb58c2.jpg?v=1786090824</g:image_link>
+    <g:price>13599.00 USD</g:price>
+    <g:availability>in stock</g:availability><g:condition>new</g:condition>
+    <g:brand>HUAYEE</g:brand><g:mpn>HY18B</g:mpn>
+    <g:shipping><g:country>US</g:country><g:service>Freight</g:service><g:price>0 USD</g:price></g:shipping>
+  </item>
+</channel></rss>
