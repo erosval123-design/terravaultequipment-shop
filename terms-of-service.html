@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2307060f'/%3E%3Cpolygon points='3,6 17,6 17,11 3,11' fill='%231a5c2a'/%3E%3Cpolygon points='17,6 21,9 21,14 17,11' fill='%230e3a1a'/%3E%3Cpolygon points='3,6 7,3 21,3 17,6' fill='%232a7a3c'/%3E%3Crect x='9' y='11' width='5' height='16' fill='%231a5c2a'/%3E%3Crect x='14' y='11' width='4' height='16' fill='%230e3a1a'/%3E%3Cpolygon points='18,5 24,5 30,28 24,28' fill='%23c8920e'/%3E%3Cpolygon points='24,5 28,8 32,28 28,28 30,28 24,28' fill='%238a6008'/%3E%3C/svg%3E">
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Terms of Service | TerraVault Equipment</title>
 <meta name="description" content="Compact Machines. Serious Results. — TerraVault Equipment">
@@ -359,15 +360,54 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
 .ft-copy{color:rgba(255,255,255,.26);font-size:.75rem}
 .ppills{display:flex;gap:5px}
 .ppill{background:var(--s2);border:1px solid var(--bd);padding:3px 9px;border-radius:4px;font-size:.65rem;color:rgba(255,255,255,.35);font-weight:600;font-family:var(--ff-body)}
+
+/* full logo SVG */
+.logo-svg{display:block;height:44px;width:auto}
+.logo-mark,.logo-name{display:none!important}
+@media(max-width:480px){.logo-svg{height:36px}}
+
 </style>
 </head>
 <body>
 <div class="hdr-wrap">
   <div class="hdr">
-    <a href="index.html" class="logo">
-      <div class="logo-mark"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><!-- vault door body --><rect x="3" y="3" width="17" height="18" rx="2" stroke="white" stroke-width="1.8"/><!-- dial ring --><circle cx="11.5" cy="12" r="4.5" stroke="white" stroke-width="1.5"/><!-- three dial spokes --><line x1="11.5" y1="7.5" x2="11.5" y2="9.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/><line x1="15.4" y1="14.3" x2="13.7" y2="13.3" stroke="white" stroke-width="1.8" stroke-linecap="round"/><line x1="7.6" y1="14.3" x2="9.3" y2="13.3" stroke="white" stroke-width="1.8" stroke-linecap="round"/><!-- center hub --><circle cx="11.5" cy="12" r="1.8" fill="white"/><!-- door handle (right side) --><rect x="20.5" y="9.5" width="2.5" height="5" rx="1.2" fill="white"/></svg></div>
-      <span class="logo-name">TerraVault <em>Equipment</em></span>
-    </a>
+    <a href="index.html" class="logo"><svg viewBox="0 0 390 56" height="46" xmlns="http://www.w3.org/2000/svg">
+  <!-- === 3D TV monogram === -->
+  <!-- T shape — dark green, with 3D face/side -->
+  <!-- T crossbar top face -->
+  <polygon points="4,10 40,10 40,18 4,18" fill="#1a5c2a"/>
+  <!-- T crossbar right side (3D depth) -->
+  <polygon points="40,10 46,14 46,22 40,18" fill="#0e3a1a"/>
+  <!-- T crossbar top bevel -->
+  <polygon points="4,10 10,6 46,6 40,10" fill="#2a7a3c"/>
+  <!-- T stem face -->
+  <polygon points="19,18 25,18 25,52 19,52" fill="#1a5c2a"/>
+  <!-- T stem right side -->
+  <polygon points="25,18 31,22 31,56 25,52" fill="#0e3a1a"/>
+  <!-- T stem top bevel -->
+  <polygon points="19,18 25,14 31,18 25,22" fill="#2a7a3c"/>
+
+  <!-- V shape — gold/earth, to the right and slightly overlapping -->
+  <!-- V left leg face -->
+  <polygon points="36,8 44,8 54,46 46,46" fill="#c8920e"/>
+  <!-- V left leg side -->
+  <polygon points="44,8 50,12 60,50 54,46" fill="#8a6008"/>
+  <!-- V left leg top bevel -->
+  <polygon points="36,8 42,4 50,4 44,8" fill="#e8b030"/>
+  <!-- V right leg face -->
+  <polygon points="58,8 66,8 56,46 48,46" fill="#c8920e"/>
+  <!-- V right leg side -->
+  <polygon points="66,8 72,12 62,50 56,46" fill="#8a6008"/>
+  <!-- V right leg top bevel -->
+  <polygon points="58,8 64,4 72,4 66,8" fill="#e8b030"/>
+
+  <!-- Wordmark: TERRAVAULT (white) -->
+  <text x="88" y="38" font-family="'Barlow Condensed',Impact,'Arial Black',sans-serif"
+        font-size="34" font-weight="900" fill="#ffffff" letter-spacing="-0.5">TERRAVAULT</text>
+  <!-- Sub: EQUIPMENT (gold) -->
+  <text x="89" y="54" font-family="'Barlow Condensed',sans-serif"
+        font-size="11.5" font-weight="600" fill="#c8920e" letter-spacing="4.5">EQUIPMENT</text>
+</svg></a>
     <button class="hmbtn" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
