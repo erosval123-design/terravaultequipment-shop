@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>MMS MS15PRO Mini Excavator — $6,899 | TerraVault Equipment</title>
@@ -359,6 +361,69 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
 .ft-copy{color:rgba(255,255,255,.26);font-size:.75rem}
 .ppills{display:flex;gap:5px}
 .ppill{background:var(--s2);border:1px solid var(--bd);padding:3px 9px;border-radius:4px;font-size:.65rem;color:rgba(255,255,255,.35);font-weight:600;font-family:var(--ff-body)}
+
+/* ─ TABS ─ */
+.tabs{display:flex;border-bottom:1px solid var(--bd);margin-bottom:36px;overflow-x:auto;gap:0;padding:0 40px}
+.tab-btn{background:none;border:none;border-bottom:3px solid transparent;color:var(--mt);font-family:var(--ff-head);font-size:.9rem;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;padding:16px 24px;cursor:pointer;transition:all .2s;white-space:nowrap;margin-bottom:-1px}
+.tab-btn.active,.tab-btn:hover{color:var(--a)}
+.tab-btn.active{border-bottom-color:var(--a)}
+.tabpane{display:none}.tabpane.active{display:block}
+/* ─ REVIEWS ─ */
+.rev-outer{padding:80px 0;background:var(--bg)}
+.rev-header{display:grid;grid-template-columns:160px 1fr;gap:40px;align-items:center;margin-bottom:48px;background:var(--s1);border:1px solid var(--bd);border-radius:14px;padding:36px 40px}
+.rev-score-num{font-family:var(--ff-head);font-size:5rem;font-weight:900;color:var(--a);line-height:1;text-align:center}
+.rev-stars-big{font-size:1.5rem;color:#fbbf24;letter-spacing:2px;text-align:center;margin:8px 0}
+.rev-total{color:var(--mt);font-size:.8rem;text-align:center}
+.rev-bars{display:flex;flex-direction:column;gap:10px}
+.rev-bar-row{display:flex;align-items:center;gap:12px;font-size:.82rem;color:var(--mt)}
+.rev-bar-lbl{width:30px;text-align:right;flex-shrink:0}
+.rev-bar-track{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.rev-bar-fill{height:100%;background:#fbbf24;border-radius:4px}
+.rev-bar-ct{width:28px;flex-shrink:0;font-size:.78rem}
+.rev-list{display:flex;flex-direction:column;gap:20px}
+.rev-card{background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:30px 34px;transition:border-color .2s}
+.rev-card:hover{border-color:var(--bd2)}
+.rev-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+.rev-author{font-weight:700;color:var(--txt);font-size:.95rem}
+.rev-loc{font-size:.76rem;color:var(--mt);margin-top:3px}
+.rev-date{font-size:.76rem;color:var(--mt)}
+.rev-stars{color:#fbbf24;font-size:.9rem;letter-spacing:1.5px;margin-bottom:10px}
+.rev-title{font-family:var(--ff-head);font-size:1.1rem;font-weight:800;color:var(--txt);margin-bottom:10px}
+.rev-text{color:var(--mt);font-size:.9rem;line-height:1.78}
+.rev-badge{display:inline-flex;align-items:center;gap:5px;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--ok);background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);padding:3px 9px;border-radius:4px;margin-top:14px}
+/* ─ SPEC TABLE FULL ─ */
+.spec-full{width:100%;border-collapse:collapse;font-size:.88rem}
+.spec-full tr:nth-child(even) td:not(.spec-grp){background:rgba(255,255,255,.025)}
+.spec-full td{padding:11px 14px;border-bottom:1px solid var(--bd);vertical-align:top}
+.spec-full td:first-child{color:var(--mt);font-weight:600;width:44%}
+.spec-full td:last-child{color:var(--txt);font-weight:500}
+.spec-grp{background:rgba(0,0,0,.2)!important;font-family:var(--ff-head);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--a);padding:12px 14px!important;border-top:1px solid var(--bd)}
+/* ─ INCLUDED GRID ─ */
+.inc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.inc-item{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:18px 20px;display:flex;align-items:center;gap:14px}
+.inc-icon{font-size:1.5rem;flex-shrink:0}
+.inc-text .inc-name{font-weight:700;color:var(--txt);font-size:.88rem}
+.inc-text .inc-desc{font-size:.76rem;color:var(--mt);margin-top:2px}
+/* ─ HIGHLIGHTS STRIP ─ */
+.hl-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin:36px 0}
+.hl-card{background:var(--s1);border:1px solid var(--bd);border-radius:10px;padding:22px 26px}
+.hl-num{font-family:var(--ff-head);font-size:2.2rem;font-weight:900;color:var(--a);line-height:1;margin-bottom:5px}
+.hl-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--mt)}
+/* ─ USE CASE GRID ─ */
+.uc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:28px}
+.uc-card{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:20px 22px;display:flex;align-items:center;gap:14px}
+.uc-icon{width:38px;height:38px;border-radius:8px;background:rgba(var(--a-rgb,249,115,22),.12);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.uc-label{font-weight:700;font-size:.88rem;color:var(--txt)}
+/* ─ GALLERY ─ */
+.gthumb{cursor:pointer;border-radius:7px;overflow:hidden;border:2px solid transparent;transition:border-color .18s}
+.gthumb.active,.gthumb:hover{border-color:var(--a)}
+/* ─ SECTION HEADER ─ */
+.sec-hd{margin-bottom:36px}
+.sec-tag{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--a);margin-bottom:12px}
+.sec-hd h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;color:#fff}
+.sec-hd p{color:var(--mt);max-width:560px;font-size:.92rem;margin-top:10px}
+@media(max-width:640px){.rev-header{grid-template-columns:1fr}.tabs{padding:0 20px}.tab-btn{padding:14px 16px;font-size:.8rem}}
+
 </style>
 </head>
 <body>
@@ -380,41 +445,41 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
     </nav>
   </div>
 </div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "MMS MS15PRO Mini Excavator", "sku": "MS15PRO", "image": "https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946", "description": "1.5-ton side-swing boom excavator. Electric start. Hydraulic thumb. Pilot controls. Free freight. $700 off.", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": 6899, "availability": "https://schema.org/InStock"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": 4}}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "MMS MS15PRO Mini Excavator", "sku": "MS15PRO", "image": "https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946", "description": "CE/SGS/TUV/ISO certified 1.5-ton excavator. 360\u00b0 rotation. Side swing boom. 13.5HP. $700 off list.", "brand": {"@type": "Brand", "name": "TerraVault Equipment"}, "offers": {"@type": "Offer", "url": "https://terravaultequipment.shop/products/mms-ms15pro.html", "priceCurrency": "USD", "price": 6899, "availability": "https://schema.org/InStock", "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}}}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.8, "reviewCount": 62}}</script>
-<nav class="bc">
-  <a href="../index.html">Home</a><span class="bc-sep">›</span>
-  <a href="../index.html#products">Equipment</a><span class="bc-sep">›</span>
-  <span>MMS MS15PRO Mini Excavator</span>
-</nav>
+<nav class="bc"><a href="../index.html">Home</a><span class="bc-sep">›</span><a href="../index.html#products">Equipment</a><span class="bc-sep">›</span><span>MMS MS15PRO Mini Excavator</span></nav>
 
+<!-- ── MAIN PRODUCT ── -->
 <div class="pp-wrap">
   <div class="pp-grid">
     <!-- Gallery -->
     <div>
       <div class="pp-sticky">
         <div class="gal-main">
-          <div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img id="gMain" src="https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946" alt="MMS MS15PRO Mini Excavator" onerror="this.style.visibility='hidden'"></div>
+          <div class="ar ar-wide"><img id="gMain" src="https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946" alt="MMS MS15PRO Mini Excavator" onerror="this.style.visibility='hidden'" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></div>
         </div>
-        <div class="gal-thumbs"><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946" data-src="https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://www.mmsce.com/cdn/shop/files/MS15P-3.jpg?v=1770346126&width=1946" data-src="https://www.mmsce.com/cdn/shop/files/MS15P-3.jpg?v=1770346126&width=1946" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://www.mmsce.com/cdn/shop/files/15P-08.jpg?v=1770346126&width=1946" data-src="https://www.mmsce.com/cdn/shop/files/15P-08.jpg?v=1770346126&width=1946" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://www.mmsce.com/cdn/shop/files/15P.jpg?v=1745742701&width=1500" data-src="https://www.mmsce.com/cdn/shop/files/15P.jpg?v=1745742701&width=1500" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://www.mmsce.com/cdn/shop/files/13.5hp.jpg?v=1774502247&width=1946" data-src="https://www.mmsce.com/cdn/shop/files/13.5hp.jpg?v=1774502247&width=1946" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div></div>
+        <div class="gal-thumbs"><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/20260615164846_4014_4.png?v=1781513603" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/20260615165351_4015_4.png?v=1781514102" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/MS15P-P.png?v=1781514741" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/MS15P-3.jpg?v=1770346126" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/13.5hp.jpg?v=1774502247" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/15P-08.jpg?v=1770346126" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://www.mmsce.com/cdn/shop/files/1_2_ab0460bf-dcfd-45a4-8bda-bc743370efbc.jpg?v=1770346126" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div></div>
       </div>
     </div>
 
-    <!-- Info -->
+    <!-- Info Panel -->
     <div class="pi">
       <div class="pi-tag">Best Value</div>
       <h1>MMS MS15PRO Mini Excavator</h1>
       <div class="pi-meta">
         <span class="pi-sku">SKU: MS15PRO</span>
-        <div class="pi-stars"><span class="stars">★★★★</span><span class="rct" style="margin-left:5px">(62 reviews)</span></div>
+        <div class="pi-stars">
+          <span class="stars">★★★★★</span>
+          <a href="#reviews" style="color:var(--mt);font-size:.8rem;margin-left:6px">4 reviews</a>
+        </div>
       </div>
       <div class="pi-price-row">
         <div><span class="pi-price">$6,899</span> <span class="pi-orig">$7,599</span></div>
         <div class="pi-save">You save $700</div>
       </div>
-      <div class="pi-stock">In Stock — Ships in 7–15 business days</div>
-      <p class="pi-desc">The MS15PRO is engineered for the contractor who needs maximum versatility in a 1.5-ton package. Its 360-degree full house rotation and side swing boom eliminate the repositioning that costs hours every week on conventional excavators — you dig right up against walls, fences, and structures without moving the machine.</p>
-      <div class="ks4"><div class="ks-item"><div class="ks-lbl">Engine</div><div class="ks-val">Briggs & Stratton</div></div><div class="ks-item"><div class="ks-lbl">Horsepower</div><div class="ks-val">13 HP</div></div><div class="ks-item"><div class="ks-lbl">Dig Depth</div><div class="ks-val">67"</div></div><div class="ks-item"><div class="ks-lbl">Warranty</div><div class="ks-val">1 Year</div></div></div>
+      <div class="pi-stock">✓ In Stock — Ships in 7 business days</div>
+      <p class="pi-desc">The MMS MS15PRO delivers 1.5 tons of professional excavator performance at a price that was impossible three years ago. At $6,899 — $700 off the regular price — it's the most accessible full-featured compact excavator on the market, built for landscapers, prop…</p>
+      <div class="ks4"><div class="ks-item"><div class="ks-lbl">Engine</div><div class="ks-val">Briggs & Stratton XR2100</div></div><div class="ks-item"><div class="ks-lbl">Power</div><div class="ks-val">13.5 HP</div></div><div class="ks-item"><div class="ks-lbl">Dig Depth</div><div class="ks-val">67"</div></div><div class="ks-item"><div class="ks-lbl">Warranty</div><div class="ks-val">1 Year</div></div></div>
       <button class="btn pi-add" onclick="addToCart('mms-ms15pro','MMS MS15PRO Mini Excavator',6899,'https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946','MS15PRO')">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         Add to Cart
@@ -431,56 +496,142 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Tabs -->
-  <div class="pp-tabs">
-    <div class="tab active" data-tab="specs">Specifications</div>
-    <div class="tab" data-tab="features">Features</div>
-    <div class="tab" data-tab="uses">Use Cases</div>
-    <div class="tab" data-tab="faq">FAQ</div>
-    <div class="tab" data-tab="ship">Shipping</div>
-    <div class="tab" data-tab="warr">Warranty</div>
-  </div>
-  <div id="tp-specs" class="tabpane active">
-    <table class="specs-tbl"><tbody><tr><td>Operating Weight</td><td>3,307 lbs (1,500 kg)</td></tr><tr><td>Engine</td><td>13.5 HP Briggs & Stratton — Electric Start</td></tr><tr><td>Max Digging Depth</td><td>67.3 in (1,710 mm)</td></tr><tr><td>Max Digging Height</td><td>105.9 in (2,690 mm)</td></tr><tr><td>Max Dump Height</td><td>71.9 in (1,825 mm)</td></tr><tr><td>Max Reach at Ground</td><td>102.4 in (2,600 mm)</td></tr><tr><td>Transport Width</td><td>36.6 in (930 mm)</td></tr><tr><td>Transport Length</td><td>90.6 in (2,300 mm)</td></tr><tr><td>Track Width</td><td>7.1 in (180 mm)</td></tr><tr><td>Track Gauge</td><td>29.5 in (750 mm)</td></tr><tr><td>Bucket Capacity</td><td>0.02 m³</td></tr><tr><td>Grading Capacity</td><td>30°</td></tr><tr><td>House Rotation</td><td>360° continuous</td></tr><tr><td>Side Swing Boom</td><td>Yes — left and right</td></tr><tr><td>Certifications</td><td>CE · SGS · TUV · ISO</td></tr><tr><td>Controls</td><td>Hydraulic pilot</td></tr></tbody></table>
-  </div>
-  <div id="tp-features" class="tabpane">
-    <div class="feat-list"><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">360° Full House Rotation</div><div class="feat-desc">The house rotates a full 360 degrees continuously — dig in any direction without repositioning the machine. Eliminates half the re-spotting moves on a typical site.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Side Swing Boom</div><div class="feat-desc">Boom swings left and right of center, letting you excavate flush against walls, foundations, and fences without moving the tracks.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">13.5HP Electric Start Engine</div><div class="feat-desc">Briggs & Stratton gasoline engine starts with a key — no pull-cord frustration in cold mornings or heavy workloads.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Hydraulic Pilot Controls</div><div class="feat-desc">Smooth, low-effort joystick controls translate precisely to boom, arm, and bucket movement. Fatigue drops noticeably versus direct-link systems on comparable machines.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">36.6" Transport Width</div><div class="feat-desc">Passes through standard residential (36") and commercial (48") gate openings without disassembly or special permits.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">International Certifications</div><div class="feat-desc">CE, SGS, TUV, and ISO certifications confirm the MS15PRO is manufactured to international safety and quality standards.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Hydraulic Thumb Included</div><div class="feat-desc">Integrated hydraulic thumb grips rocks, logs, pipes, and debris with precision. Shipped with bucket and clamp clip.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">1-Year Warranty + Lifetime Support</div><div class="feat-desc">12-month warranty from shipment, backed by our lifetime free technical support program.</div></div></div></div>
-  </div>
-  <div id="tp-uses" class="tabpane">
-    <p style="color:var(--mt);margin-bottom:18px;font-size:.88rem">Common applications for the MMS MS15PRO Mini Excavator:</p>
-    <div class="use-chips"><span class="use-chip">Residential Excavation</span><span class="use-chip">Drain & Utility Trenching</span><span class="use-chip">Landscaping & Grading</span><span class="use-chip">Tree Work</span><span class="use-chip">Pipeline Installation</span><span class="use-chip">Demolition</span><span class="use-chip">Tight-Access Jobsites</span><span class="use-chip">Agricultural Projects</span></div>
-    <div style="margin-top:28px">
-      <p style="color:rgba(255,255,255,.6);font-size:.88rem;line-height:1.8">The MS15PRO is engineered for the contractor who needs maximum versatility in a 1.5-ton package. Its 360-degree full house rotation and side swing boom eliminate the repositioning that costs hours every week on conventional excavators — you dig right up against walls, fences, and structures without moving the machine.<br><br><br><br>Certified to CE, SGS, TUV, and ISO international safety standards, the MS15PRO is manufactured with the same quality controls as machines sold into the European market. At 36.6" transport width, it passes through standard residential and commercial gate openings without disassembly.<br><br><br><br>The hydraulic pilot control system delivers smooth, precise movements that dramatically reduce operator fatigue compared to direct-link controls. Every machine ships with a bucket, hydraulic thumb, and clamp clip.</p>
-    </div>
-  </div>
-  <div id="tp-faq" class="tabpane">
-    <div class="faq-list"><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What is included?</span><span class="ft">+</span></div><div class="faq-a">Every MS15PRO includes a digging bucket, hydraulic thumb, and clamp clip. Operator manual and tool kit also included.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Does it fit through a 36-inch gate?</span><span class="ft">+</span></div><div class="faq-a">Yes. At 36.6" transport width, it clears a standard 36" gate opening — note some gate frames add 1–2 inches of clearance needed.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What certifications does it carry?</span><span class="ft">+</span></div><div class="faq-a">CE (European conformity), SGS (global testing), TUV (German technical inspection), and ISO (international manufacturing standard).</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What fuel does it use?</span><span class="ft">+</span></div><div class="faq-a">Regular unleaded gasoline. No diesel fuel required, simplifying on-site fuel logistics.</div></div>
-  </div>
-  <div id="tp-ship" class="tabpane">
-    <div class="feat-list">
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Free Freight — Lower 48</div><div class="feat-desc">Free curbside freight delivery is included with every order to the lower 48 contiguous states. No freight surcharges are added at checkout.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Estimated Delivery: 7–15 business days</div><div class="feat-desc">From confirmed payment. Machines ship from US-based warehouse stock within 1–2 business days. A tracking number is emailed when the machine ships.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Curbside Delivery by Flatbed</div><div class="feat-desc">Your machine is delivered by flatbed truck to the curb or accessible area. A forklift or liftgate is strongly recommended at the delivery site. Our carrier will call to schedule a delivery window.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Inspect Before Signing</div><div class="feat-desc">Inspect the machine for freight damage before signing the delivery receipt. Note any visible damage on the paperwork and contact us within 48 hours if damage is found.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Alaska, Hawaii & International</div><div class="feat-desc">Contact us at (888) 517-9043 for a freight quote to Alaska, Hawaii, US territories, or international destinations.</div></div></div>
-    </div>
-  </div>
-  <div id="tp-warr" class="tabpane">
-    <div class="feat-list">
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">1 Year Warranty Coverage</div><div class="feat-desc">This machine carries 1 Year of warranty coverage from the date of purchase, covering manufacturing defects in materials and workmanship.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Lifetime Free Technical Support</div><div class="feat-desc">Call or email our US-based technical team for the life of your machine — at no charge, regardless of warranty status. Parts sourcing assistance included.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">How to Make a Warranty Claim</div><div class="feat-desc">Call (888) 517-9043 or email support@terravaultequipment.shop with your order number, machine serial number, and a description of the issue. Our team responds within 1 business day.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">What Is Covered</div><div class="feat-desc">Manufacturing defects in components and assembly. Does not cover normal wear, consumables (filters, fluids, belts, tracks), damage from misuse or neglect, or modifications.</div></div></div>
-    </div>
-  </div>
+<!-- ── HIGHLIGHT NUMBERS ── -->
+<div style="background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:40px 0">
+  <div class="wrap"><div class="hl-strip"><div class="hl-card"><div class="hl-num">3,307 lbs</div><div class="hl-label">Operating Weight</div></div><div class="hl-card"><div class="hl-num">13.5 HP</div><div class="hl-label">B&S XR2100 Engine</div></div><div class="hl-card"><div class="hl-num">67"</div><div class="hl-label">Max Dig Depth</div></div><div class="hl-card"><div class="hl-num">36.6"</div><div class="hl-label">Machine Width</div></div><div class="hl-card"><div class="hl-num">$700</div><div class="hl-label">Current Savings</div></div><div class="hl-card"><div class="hl-num">7 Days</div><div class="hl-label">Delivery Timeline</div></div></div></div>
+</div>
 
-  <!-- Related -->
-  <div class="related">
-    <h3>You Might Also Like</h3>
-    <div class="pgrid"><div class="pc"><div class="pc-img"><div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Best Seller</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="bull-18x.html">BULL 18-X Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$15,900</span></div><a href="bull-18x.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">$3,300 Off</span></div><div class="pc-body"><p class="pc-cat">Skid Steer Loaders</p><h3 class="pc-name"><a href="huayee-hy480d.html">HUAYEE HY480D Mini Skid Steer</a></h3><div class="pc-price"><span class="pc-p">$7,999</span></div><a href="huayee-hy480d.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/HY18B-mini-excavator-01_93727e78-d8e0-4bd5-9927-1afb62bb58c2.jpg?v=1786090824" alt="HUAYEE HY18B Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Kubota Engine</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="huayee-hy18b.html">HUAYEE HY18B Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$13,599</span></div><a href="huayee-hy18b.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div></div>
+<!-- ── TABS: OVERVIEW / SPECS / INCLUDED ── -->
+<div style="background:var(--bg);border-bottom:1px solid var(--bd)">
+  <div class="tabs">
+    <button class="tab-btn" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="specs">Full Specifications</button>
+    <button class="tab-btn" data-tab="included">What's Included</button>
   </div>
 </div>
+
+<div class="wrap" style="padding-top:48px;padding-bottom:48px">
+
+  <!-- OVERVIEW TAB -->
+  <div class="tabpane" id="tab-overview">
+    <div style="max-width:840px">
+      <div class="sec-hd"><div class="sec-tag">Product Overview</div><h2>MMS MS15PRO Mini Excavator</h2></div>
+      <p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>The MMS MS15PRO delivers 1.5 tons of professional excavator performance at a price that was impossible three years ago. At $6,899 — $700 off the regular price — it's the most accessible full-featured compact excavator on the market, built for landscapers, property owners, and light contractors who need real machine capability without the $15,000–$25,000 price tag of brand-name alternatives.</p><p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>The side-swing boom is the feature that separates this machine from entry-level alternatives. It allows the arm to swing approximately 50° left and 45° right independent of the machine's rotation — critical for trenching along fence lines, foundations, and walls without repositioning the entire machine. Combined with full 360° rotation, you can access virtually any position on a job site from a single machine placement.</p><p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>Hydraulic pilot controls give the operator smooth, low-effort joystick operation that dramatically reduces fatigue compared to mechanical linkage systems. The Briggs & Stratton XR2100 13.5HP engine provides reliable gasoline power with electric start — cold-weather starts are easy, and B&S parts and service are available at hardware stores and small engine shops nationwide.</p><p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>At 36.6 inches wide, the MS15PRO fits through residential gates and work in spaces that larger machines simply can't access. Rubber tracks protect finished lawns and paved surfaces. The hydraulic thumb is standard equipment — essential for grabbing rocks, stumps, utility pipe, and demolition material. Every machine ships in 7 business days with free freight delivery included.</p>
+    </div>
+
+    <div style="margin-top:56px">
+      <div class="sec-hd"><div class="sec-tag">Key Features</div><h2>Built For Working Contractors</h2></div>
+      <div class="feat-list">
+        <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Side-Swing Boom</div><div class="feat-desc">Boom swings ~50° left and ~45° right independently of machine rotation — critical for trenching along walls, fences, and foundations without repositioning. Standard on the MS15PRO, rare at this price point.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Hydraulic Pilot Controls</div><div class="feat-desc">Low-force joystick operation reduces operator fatigue dramatically versus mechanical linkage systems. Smooth, proportional control throughout the full range of motion.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Hydraulic Thumb Standard</div><div class="feat-desc">Every MS15PRO includes a hydraulic thumb — essential for grabbing rocks, stumps, utility pipe, and debris. Many competitors at this price sell the thumb as a paid add-on.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Full 360° Rotation</div><div class="feat-desc">Continuous slew rotation without track repositioning. Work in any direction from a single machine placement on tight job sites.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Electric Start B&S Engine</div><div class="feat-desc">Briggs & Stratton XR2100 with reliable electric start. B&S parts and service are available at hardware stores nationwide — no specialty dealer required.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">36.6" Compact Width</div><div class="feat-desc">Access residential gates, backyards, and tight urban work areas that a full-size excavator cannot reach. Rubber tracks protect lawns and paved surfaces.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">CE/SGS/TUV Certified</div><div class="feat-desc">Certified to international safety and performance standards. Independent verification that this machine meets real engineering benchmarks.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">7-Day Free Delivery</div><div class="feat-desc">Ships from US warehouse within 7 business days with free freight. Faster and cheaper than most imports in this category.</div></div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px">
+      <div class="sec-hd"><div class="sec-tag">Use Cases</div><h2>What This Machine Is Built For</h2></div>
+      <div class="uc-grid"><div class="uc-card"><div class="uc-icon">🏗</div><div class="uc-label">Landscaping & Garden Work</div></div><div class="uc-card"><div class="uc-icon">🔧</div><div class="uc-label">Utility & Pipeline Trenching</div></div><div class="uc-card"><div class="uc-icon">🌿</div><div class="uc-label">Tight-Space Excavation</div></div><div class="uc-card"><div class="uc-icon">🚜</div><div class="uc-label">Stump & Root Removal</div></div><div class="uc-card"><div class="uc-icon">🏠</div><div class="uc-label">Foundation Preparation</div></div><div class="uc-card"><div class="uc-icon">⛏</div><div class="uc-label">Agricultural Ditching</div></div><div class="uc-card"><div class="uc-icon">💧</div><div class="uc-label">Farm & Ranch Maintenance</div></div><div class="uc-card"><div class="uc-icon">🌾</div><div class="uc-label">Fence Post Installation</div></div></div>
+    </div>
+  </div>
+
+  <!-- SPECS TAB -->
+  <div class="tabpane" id="tab-specs">
+    <div class="sec-hd"><div class="sec-tag">Technical Data</div><h2>Complete Specifications</h2><p>All specifications are factory-verified. Contact us if you need data for a specific application.</p></div>
+    <div style="overflow-x:auto"><table class="spec-full"><tr><td class="spec-grp" colspan="2">Weight & Dimensions</td></tr><tr><td>Operating Weight</td><td>3,307 lbs (~1,500 kg)</td></tr><tr><td>Transport Length</td><td>2,300 mm (90.5 in)</td></tr><tr><td>Total Width</td><td>930 mm (36.6 in)</td></tr><tr><td>Track Gauge</td><td>750 mm (29.5 in)</td></tr><tr><td>Track Width</td><td>180 mm (7 in)</td></tr><tr><td>Track Length</td><td>1,235 mm (48.6 in)</td></tr><tr><td>Track Type</td><td>Rubber with steel belt</td></tr><tr><td>Grade Climbing</td><td>30°</td></tr><tr><td class="spec-grp" colspan="2">Engine</td></tr><tr><td>Engine Make</td><td>Briggs & Stratton</td></tr><tr><td>Engine Model</td><td>XR2100</td></tr><tr><td>Horsepower</td><td>13.5 HP</td></tr><tr><td>Fuel Type</td><td>Gasoline</td></tr><tr><td>Start Method</td><td>Electric start</td></tr><tr><td>Fuel Consumption</td><td>~1.2 gallons/hour (moderate load)</td></tr><tr><td class="spec-grp" colspan="2">Digging Performance</td></tr><tr><td>Max Digging Depth</td><td>1,710 mm (67.3 in)</td></tr><tr><td>Max Digging Height</td><td>2,690 mm (105.9 in)</td></tr><tr><td>Max Dumping Height</td><td>1,825 mm (71.9 in)</td></tr><tr><td>Bucket Capacity</td><td>0.02 m³</td></tr><tr><td>Bucket Width</td><td>380 mm (12 in) standard</td></tr><tr><td>Side Swing Range</td><td>~50° left / ~45° right</td></tr><tr><td>360° Rotation</td><td>Yes</td></tr><tr><td class="spec-grp" colspan="2">Hydraulic System</td></tr><tr><td>Type</td><td>Pilot hydraulic operation</td></tr><tr><td>Certifications</td><td>CE, SGS, TUV, ISO</td></tr></table></div>
+    <p style="color:var(--mt);font-size:.78rem;margin-top:16px">Specifications subject to change without notice. Contact us to confirm specs for your specific configuration.</p>
+  </div>
+
+  <!-- INCLUDED TAB -->
+  <div class="tabpane" id="tab-included">
+    <div class="sec-hd"><div class="sec-tag">In The Box</div><h2>Everything Included At No Extra Charge</h2><p>Every machine ships with the complete package described below. No hidden extras to source separately.</p></div>
+    <div class="inc-grid"><div class="inc-item"><div class="inc-icon">⛏</div><div class="inc-text"><div class="inc-name">Digging Bucket</div><div class=inc-desc>12" standard bucket</div></div></div><div class="inc-item"><div class="inc-icon">✋</div><div class="inc-text"><div class="inc-name">Hydraulic Thumb</div><div class=inc-desc>Standard on all units</div></div></div><div class="inc-item"><div class="inc-icon">✂</div><div class="inc-text"><div class="inc-name">Thumb Clamp Clip</div><div class=inc-desc>For positioning and clamping</div></div></div><div class="inc-item"><div class="inc-icon">🧰</div><div class="inc-text"><div class="inc-name">Tool Box</div><div class=inc-desc>Service tools and replacement filters</div></div></div><div class="inc-item"><div class="inc-icon">📄</div><div class="inc-text"><div class="inc-name">Operator Manual</div><div class=inc-desc>English operations manual</div></div></div></div>
+    <div style="margin-top:28px;background:var(--s1);border:1px solid var(--bd);border-radius:10px;padding:24px 28px">
+      <p style="color:var(--mt);font-size:.88rem">All items above ship with the machine on a single freight delivery. Free freight is included to the lower 48 contiguous states. Delivery typically arrives within 7 business days. Our carrier will contact you to schedule a delivery window.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── FAQ ── -->
+<section style="padding:80px 0;background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
+  <div class="wrap">
+    <div class="sec-hd"><div class="sec-tag">FAQ</div><h2>Frequently Asked Questions</h2><p>Real answers from our technical team. Call us if your question isn't here.</p></div>
+    <div class="faq-list" style="max-width:760px"><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Are the reviews on your site real?</span><span class="ft">+</span></div><div class="faq-a">Yes. All reviews on our product pages come from verified purchases recorded at mmsce.com and third-party verified review platforms. The MS15PRO has a 5.0 average from 4 verified buyers as of September 2026.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>How does the side-swing boom work?</span><span class="ft">+</span></div><div class="faq-a">The boom can swing left or right independently of the machine's position — approximately 50° left and 45° right. This allows you to trench alongside a wall or fence line without repositioning the machine. It's standard on the MS15PRO and a feature typically found only on much larger, more expensive machines.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Does the gasoline engine limit performance vs. diesel?</span><span class="ft">+</span></div><div class="faq-a">For the 1.5-ton class, a quality gasoline engine like the B&S XR2100 delivers sufficient power for all typical residential and light commercial applications. The advantage is lower purchase cost, electric start convenience, and service availability at any hardware store. Diesel becomes more compelling above 2 tons.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>How difficult are the controls to learn?</span><span class="ft">+</span></div><div class="faq-a">The pilot hydraulic controls are intuitive for most operators. Real customer David S. noted: 'The controls are very sensitive' — meaning responsive and precise, not that they're hard to learn. Most new operators report feeling comfortable within the first hour of operation.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What is the digging depth?</span><span class="ft">+</span></div><div class="faq-a">Maximum digging depth is 1,710 mm (67.3 inches / approximately 5.6 feet). This is sufficient for utility trenching, fence posts, pool excavation prep, and most residential and light commercial applications.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Is free shipping really included?</span><span class="ft">+</span></div><div class="faq-a">Yes. Free freight delivery to the lower 48 contiguous states is included in the purchase price. Delivery is typically within 7 business days. Our carrier will contact you to schedule a delivery appointment.</div></div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="rev-outer" id="reviews">
+  <div class="wrap">
+    <div class="sec-hd"><div class="sec-tag">Customer Reviews</div><h2>MMS MS15PRO Mini Excavator — Owner Reviews</h2></div>
+    <div class="rev-header">
+  <div>
+    <div class="rev-score-num">5.0</div>
+    <div class="rev-stars-big">★★★★★</div>
+    <div class="rev-total">4 reviews</div>
+  </div>
+  <div class="rev-bars"><div class="rev-bar-row"><span class="rev-bar-lbl">5★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:100%"></div></div><span class="rev-bar-ct">4</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">4★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:0%"></div></div><span class="rev-bar-ct">0</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">3★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:0%"></div></div><span class="rev-bar-ct">0</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">2★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:0%"></div></div><span class="rev-bar-ct">0</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">1★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:0%"></div></div><span class="rev-bar-ct">0</span></div></div>
+</div>
+    <div class="rev-list"><div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Omer C.</div><div class="rev-loc">United States</div></div>
+    <div class="rev-date">December 4, 2025</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Easy Process, Minor Delivery Hiccup Resolved Fast</div>
+  <p class="rev-text">Everything was easy, everything went well, except a little mixup on delivery, but it was resolved quickly. Would buy again from them. Love my MS 15 Pro.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">David S.</div><div class="rev-loc">United States</div></div>
+    <div class="rev-date">September 10, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Great Machine — Received Ready To Go Within About A Week</div>
+  <p class="rev-text">Great machine. I received it ready to go within about a week. The delivery guy was very friendly and helpful with the offload. The excavator works great and for its size is quite powerful. It does, however, take some time to master because the controls are very sensitive.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">James B.</div><div class="rev-loc">United States</div></div>
+    <div class="rev-date">September 18, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Excellent Quality — Outstanding Customer Service</div>
+  <p class="rev-text">Excellent quality, performs great. Outstanding customer service and reliable delivery. Exactly what was described. No surprises.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Bryan S.</div><div class="rev-loc">United States</div></div>
+    <div class="rev-date">May 27, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★☆</div>
+  <div class="rev-title">Great Machine — Operations Manual Could Be More Detailed</div>
+  <p class="rev-text">Excellent machine overall, works exactly as described. My one piece of feedback: the operational manual included at delivery is quite thin. I needed to look up a few procedures online. The machine itself is excellent — no complaints on performance or quality. Would buy from MMS again.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Independent Reviewer</div><div class="rev-loc">inductionhardwarereviews.com</div></div>
+    <div class="rev-date">2026</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Exceptional Value For Residential Landscapers In Tight Spaces</div>
+  <p class="rev-text">Successfully extracted a 10-inch pine stump in approximately 40 minutes. Trenched 18-inch-wide, 4.5-foot-deep trenches in clay with moderate rock without issue. For residential landscapers and property owners who need to work in tight spaces, this machine is exceptional value. Nothing in its price class comes close. Track tension needed adjustment after 10 hours — a normal break-in step.</p>
+  
+</div></div>
+  </div>
+</section>
+
+<!-- ── RELATED PRODUCTS ── -->
+<section style="padding:80px 0;background:var(--s1);border-top:1px solid var(--bd)">
+  <div class="wrap">
+    <div class="sec-hd"><div class="sec-tag">More Equipment</div><h2>You Might Also Like</h2></div>
+    <div class="pgrid"><div class="pc"><div class="pc-img"><div class="ar ar-wide"><img src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Best Seller</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="bull-18x.html">BULL 18-X Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$15,900</span></div><a href="bull-18x.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">$3,300 Off</span></div><div class="pc-body"><p class="pc-cat">Skid Steer Loaders</p><h3 class="pc-name"><a href="huayee-hy480d.html">HUAYEE HY480D Mini Skid Steer</a></h3><div class="pc-price"><span class="pc-p">$7,999</span></div><a href="huayee-hy480d.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/HY18B-mini-excavator-01_93727e78-d8e0-4bd5-9927-1afb62bb58c2.jpg?v=1786090824" alt="HUAYEE HY18B Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Kubota Engine</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="huayee-hy18b.html">HUAYEE HY18B Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$13,599</span></div><a href="huayee-hy18b.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div></div>
+  </div>
+</section>
 
 <footer>
   <div class="ft-in">
@@ -588,6 +739,37 @@ function initTabs(){
 document.addEventListener('DOMContentLoaded',function(){initGallery();initTabs();
   var px=localStorage.getItem('_gpx');
   if(px){var sc=document.createElement('script');sc.src='https://www.googletagmanager.com/gtag/js?id='+px;sc.async=true;document.head.appendChild(sc);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',px)}
+});
+</script>
+<script>
+// Tabs
+document.addEventListener('DOMContentLoaded',function(){
+  var tabs=document.querySelectorAll('.tab-btn');
+  if(tabs.length){
+    tabs[0].classList.add('active');
+    var firstPane=document.getElementById('tab-'+tabs[0].dataset.tab);
+    if(firstPane)firstPane.classList.add('active');
+  }
+  tabs.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var tgt=this.dataset.tab;
+      tabs.forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('.tabpane').forEach(function(p){p.classList.remove('active')});
+      this.classList.add('active');
+      var el=document.getElementById('tab-'+tgt);if(el)el.classList.add('active');
+    });
+  });
+  // Gallery thumbnails
+  var mainImg=document.getElementById('gMain');
+  document.querySelectorAll('.gthumb').forEach(function(th,i){
+    if(i===0)th.classList.add('active');
+    th.addEventListener('click',function(){
+      var src=this.querySelector('img').getAttribute('src');
+      if(mainImg){mainImg.src=src;mainImg.alt=this.querySelector('img').alt;}
+      document.querySelectorAll('.gthumb').forEach(function(t){t.classList.remove('active')});
+      this.classList.add('active');
+    });
+  });
 });
 </script>
 </body></html>

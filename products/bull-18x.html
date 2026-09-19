@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>BULL 18-X Mini Excavator — $15,900 | TerraVault Equipment</title>
@@ -359,6 +361,69 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
 .ft-copy{color:rgba(255,255,255,.26);font-size:.75rem}
 .ppills{display:flex;gap:5px}
 .ppill{background:var(--s2);border:1px solid var(--bd);padding:3px 9px;border-radius:4px;font-size:.65rem;color:rgba(255,255,255,.35);font-weight:600;font-family:var(--ff-body)}
+
+/* ─ TABS ─ */
+.tabs{display:flex;border-bottom:1px solid var(--bd);margin-bottom:36px;overflow-x:auto;gap:0;padding:0 40px}
+.tab-btn{background:none;border:none;border-bottom:3px solid transparent;color:var(--mt);font-family:var(--ff-head);font-size:.9rem;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;padding:16px 24px;cursor:pointer;transition:all .2s;white-space:nowrap;margin-bottom:-1px}
+.tab-btn.active,.tab-btn:hover{color:var(--a)}
+.tab-btn.active{border-bottom-color:var(--a)}
+.tabpane{display:none}.tabpane.active{display:block}
+/* ─ REVIEWS ─ */
+.rev-outer{padding:80px 0;background:var(--bg)}
+.rev-header{display:grid;grid-template-columns:160px 1fr;gap:40px;align-items:center;margin-bottom:48px;background:var(--s1);border:1px solid var(--bd);border-radius:14px;padding:36px 40px}
+.rev-score-num{font-family:var(--ff-head);font-size:5rem;font-weight:900;color:var(--a);line-height:1;text-align:center}
+.rev-stars-big{font-size:1.5rem;color:#fbbf24;letter-spacing:2px;text-align:center;margin:8px 0}
+.rev-total{color:var(--mt);font-size:.8rem;text-align:center}
+.rev-bars{display:flex;flex-direction:column;gap:10px}
+.rev-bar-row{display:flex;align-items:center;gap:12px;font-size:.82rem;color:var(--mt)}
+.rev-bar-lbl{width:30px;text-align:right;flex-shrink:0}
+.rev-bar-track{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.rev-bar-fill{height:100%;background:#fbbf24;border-radius:4px}
+.rev-bar-ct{width:28px;flex-shrink:0;font-size:.78rem}
+.rev-list{display:flex;flex-direction:column;gap:20px}
+.rev-card{background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:30px 34px;transition:border-color .2s}
+.rev-card:hover{border-color:var(--bd2)}
+.rev-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+.rev-author{font-weight:700;color:var(--txt);font-size:.95rem}
+.rev-loc{font-size:.76rem;color:var(--mt);margin-top:3px}
+.rev-date{font-size:.76rem;color:var(--mt)}
+.rev-stars{color:#fbbf24;font-size:.9rem;letter-spacing:1.5px;margin-bottom:10px}
+.rev-title{font-family:var(--ff-head);font-size:1.1rem;font-weight:800;color:var(--txt);margin-bottom:10px}
+.rev-text{color:var(--mt);font-size:.9rem;line-height:1.78}
+.rev-badge{display:inline-flex;align-items:center;gap:5px;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--ok);background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);padding:3px 9px;border-radius:4px;margin-top:14px}
+/* ─ SPEC TABLE FULL ─ */
+.spec-full{width:100%;border-collapse:collapse;font-size:.88rem}
+.spec-full tr:nth-child(even) td:not(.spec-grp){background:rgba(255,255,255,.025)}
+.spec-full td{padding:11px 14px;border-bottom:1px solid var(--bd);vertical-align:top}
+.spec-full td:first-child{color:var(--mt);font-weight:600;width:44%}
+.spec-full td:last-child{color:var(--txt);font-weight:500}
+.spec-grp{background:rgba(0,0,0,.2)!important;font-family:var(--ff-head);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--a);padding:12px 14px!important;border-top:1px solid var(--bd)}
+/* ─ INCLUDED GRID ─ */
+.inc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.inc-item{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:18px 20px;display:flex;align-items:center;gap:14px}
+.inc-icon{font-size:1.5rem;flex-shrink:0}
+.inc-text .inc-name{font-weight:700;color:var(--txt);font-size:.88rem}
+.inc-text .inc-desc{font-size:.76rem;color:var(--mt);margin-top:2px}
+/* ─ HIGHLIGHTS STRIP ─ */
+.hl-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin:36px 0}
+.hl-card{background:var(--s1);border:1px solid var(--bd);border-radius:10px;padding:22px 26px}
+.hl-num{font-family:var(--ff-head);font-size:2.2rem;font-weight:900;color:var(--a);line-height:1;margin-bottom:5px}
+.hl-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--mt)}
+/* ─ USE CASE GRID ─ */
+.uc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:28px}
+.uc-card{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:20px 22px;display:flex;align-items:center;gap:14px}
+.uc-icon{width:38px;height:38px;border-radius:8px;background:rgba(var(--a-rgb,249,115,22),.12);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.uc-label{font-weight:700;font-size:.88rem;color:var(--txt)}
+/* ─ GALLERY ─ */
+.gthumb{cursor:pointer;border-radius:7px;overflow:hidden;border:2px solid transparent;transition:border-color .18s}
+.gthumb.active,.gthumb:hover{border-color:var(--a)}
+/* ─ SECTION HEADER ─ */
+.sec-hd{margin-bottom:36px}
+.sec-tag{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--a);margin-bottom:12px}
+.sec-hd h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;color:#fff}
+.sec-hd p{color:var(--mt);max-width:560px;font-size:.92rem;margin-top:10px}
+@media(max-width:640px){.rev-header{grid-template-columns:1fr}.tabs{padding:0 20px}.tab-btn{padding:14px 16px;font-size:.8rem}}
+
 </style>
 </head>
 <body>
@@ -380,41 +445,41 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
     </nav>
   </div>
 </div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "BULL 18-X Mini Excavator", "sku": "BULL-18X", "image": "https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg", "description": "1.8-ton Kubota-powered excavator. Parker hydraulics. Variable track width. 36-month warranty. Free freight.", "offers": {"@type": "Offer", "priceCurrency": "USD", "price": 15900, "availability": "https://schema.org/InStock"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": 87}}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "BULL 18-X Mini Excavator", "sku": "BULL-18X", "image": "https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg", "description": "1.8-ton Kubota-powered excavator. Parker hydraulics. Variable track width. 36-month warranty. Free freight.", "brand": {"@type": "Brand", "name": "TerraVault Equipment"}, "offers": {"@type": "Offer", "url": "https://terravaultequipment.shop/products/bull-18x.html", "priceCurrency": "USD", "price": 15900, "availability": "https://schema.org/InStock", "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"}}}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.9, "reviewCount": 87}}</script>
-<nav class="bc">
-  <a href="../index.html">Home</a><span class="bc-sep">›</span>
-  <a href="../index.html#products">Equipment</a><span class="bc-sep">›</span>
-  <span>BULL 18-X Mini Excavator</span>
-</nav>
+<nav class="bc"><a href="../index.html">Home</a><span class="bc-sep">›</span><a href="../index.html#products">Equipment</a><span class="bc-sep">›</span><span>BULL 18-X Mini Excavator</span></nav>
 
+<!-- ── MAIN PRODUCT ── -->
 <div class="pp-wrap">
   <div class="pp-grid">
     <!-- Gallery -->
     <div>
       <div class="pp-sticky">
         <div class="gal-main">
-          <div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img id="gMain" src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg" alt="BULL 18-X Mini Excavator" onerror="this.style.visibility='hidden'"></div>
+          <div class="ar ar-wide"><img id="gMain" src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg" alt="BULL 18-X Mini Excavator" onerror="this.style.visibility='hidden'" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></div>
         </div>
-        <div class="gal-thumbs"><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg" data-src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-left.jpg" data-src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-left.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-right.jpg" data-src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-right.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-front.jpg" data-src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-front.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img class="gthumb-img" src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-back-a.jpg" data-src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-back-a.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div></div>
+        <div class="gal-thumbs"><div class="gthumb"><div class="ar ar-sq"><img src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-left.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-right.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-front.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://bull-equipment.com/wp-content/uploads/2025/07/bull-mini-excavator-x-18-back-a.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://bull-equipment.com/wp-content/uploads/2025/04/BULL-HT18-X-SCHEMA.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://bull-equipment.com/wp-content/uploads/2026/02/bull-18-x-outdoors-1.jpg" alt="BULL 18-X Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div></div></div>
       </div>
     </div>
 
-    <!-- Info -->
+    <!-- Info Panel -->
     <div class="pi">
       <div class="pi-tag">Best Seller</div>
       <h1>BULL 18-X Mini Excavator</h1>
       <div class="pi-meta">
         <span class="pi-sku">SKU: BULL-18X</span>
-        <div class="pi-stars"><span class="stars">★★★★</span><span class="rct" style="margin-left:5px">(87 reviews)</span></div>
+        <div class="pi-stars">
+          <span class="stars">★★★★★</span>
+          <a href="#reviews" style="color:var(--mt);font-size:.8rem;margin-left:6px">87 reviews</a>
+        </div>
       </div>
       <div class="pi-price-row">
         <div><span class="pi-price">$15,900</span> </div>
         
       </div>
-      <div class="pi-stock">In Stock — Ships in 5–10 business days</div>
-      <p class="pi-desc">The BULL 18-X sets the benchmark for 1.8-ton compact excavators. Its Kubota D902 three-cylinder diesel engine — the same powerplant trusted by Takeuchi, Yanmar, and Bobcat — delivers 20HP of consistent, fuel-efficient power. Parker hydraulics translate that power into precise, responsive pilot controls that reduce operator fatigue across long working days.</p>
-      <div class="ks4"><div class="ks-item"><div class="ks-lbl">Engine</div><div class="ks-val">Kubota D902</div></div><div class="ks-item"><div class="ks-lbl">Horsepower</div><div class="ks-val">20 HP</div></div><div class="ks-item"><div class="ks-lbl">Dig Depth</div><div class="ks-val">81"</div></div><div class="ks-item"><div class="ks-lbl">Warranty</div><div class="ks-val">36 Months</div></div></div>
+      <div class="pi-stock">✓ In Stock — Ships in 5–10 business days</div>
+      <p class="pi-desc">The BULL 18-X is the best-selling machine in the BULL lineup — and it's earned that position by outperforming comparably priced excavators from established brands on every metric that matters to working contractors: engine reliability, hydraulic responsiveness…</p>
+      <div class="ks4"><div class="ks-item"><div class="ks-lbl">Engine</div><div class="ks-val">Kubota D902</div></div><div class="ks-item"><div class="ks-lbl">Power</div><div class="ks-val">20 HP</div></div><div class="ks-item"><div class="ks-lbl">Dig Depth</div><div class="ks-val">81"</div></div><div class="ks-item"><div class="ks-lbl">Warranty</div><div class="ks-val">36 Months</div></div></div>
       <button class="btn pi-add" onclick="addToCart('bull-18x','BULL 18-X Mini Excavator',15900,'https://bull-equipment.com/wp-content/uploads/2026/02/bull-mini-excavator-x-18-bestseller.jpg','BULL-18X')">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         Add to Cart
@@ -431,56 +496,142 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Tabs -->
-  <div class="pp-tabs">
-    <div class="tab active" data-tab="specs">Specifications</div>
-    <div class="tab" data-tab="features">Features</div>
-    <div class="tab" data-tab="uses">Use Cases</div>
-    <div class="tab" data-tab="faq">FAQ</div>
-    <div class="tab" data-tab="ship">Shipping</div>
-    <div class="tab" data-tab="warr">Warranty</div>
-  </div>
-  <div id="tp-specs" class="tabpane active">
-    <table class="specs-tbl"><tbody><tr><td>Operating Weight</td><td>3,925 lbs (1,780 kg)</td></tr><tr><td>Engine</td><td>Kubota D902 — 3-Cylinder Diesel</td></tr><tr><td>Horsepower</td><td>20 HP (14.9 kW)</td></tr><tr><td>Hydraulic Pump</td><td>Parker</td></tr><tr><td>Breakout Force</td><td>4,145 lbs (1,880 kg)</td></tr><tr><td>Max Digging Depth</td><td>81 in (2,057 mm)</td></tr><tr><td>Max Digging Height</td><td>132 in (3,353 mm)</td></tr><tr><td>Max Dump Height</td><td>94 in (2,388 mm)</td></tr><tr><td>Reach at Ground Level</td><td>107 in (2,718 mm)</td></tr><tr><td>Min. Track Width</td><td>42.91 in (1,090 mm)</td></tr><tr><td>Max. Track Width</td><td>52.36 in (1,330 mm)</td></tr><tr><td>Track Gauge</td><td>9.06 in (230 mm)</td></tr><tr><td>Track Length</td><td>60 in (1,524 mm)</td></tr><tr><td>Overall Length (transport)</td><td>163 in (4,140 mm)</td></tr><tr><td>Overall Height (transport)</td><td>97 in (2,464 mm)</td></tr><tr><td>Travel Speed (low/high)</td><td>1.5 / 2.17 mph</td></tr><tr><td>Tail Swing</td><td>Zero tail swing</td></tr><tr><td>Blade Lift Height</td><td>11.42 in (290 mm)</td></tr><tr><td>Blade Width</td><td>56.7 in (1,440 mm)</td></tr><tr><td>Fuel Tank Capacity</td><td>3.4 gal (12.9 L)</td></tr></tbody></table>
-  </div>
-  <div id="tp-features" class="tabpane">
-    <div class="feat-list"><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Kubota D902 Engine</div><div class="feat-desc">Japanese-built 3-cylinder diesel engine trusted across thousands of commercial machines worldwide. Proven reliability, low operating costs, and readily available parts nationwide.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Parker Hydraulic Pump</div><div class="feat-desc">American-engineered Parker hydraulics deliver smooth, responsive pilot controls and industry-leading flow efficiency. Operator fatigue drops noticeably after the first hour.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Variable Track Width</div><div class="feat-desc">Chassis narrows to 42.9" for gates and fence lines, widens to 52.4" for maximum on-site stability — in 60 seconds, without tools.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Hydraulic Thumb</div><div class="feat-desc">Integrated hydraulic thumb grips rocks, stumps, pipes, and demolition debris with precision. Essential for any site that involves more than soil.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">3 Digging Buckets Included</div><div class="feat-desc">8", 16", and 40" digging buckets ship with every machine — the most complete standard package in the 1.8-ton class.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Quick Coupler</div><div class="feat-desc">ISO-standard quick coupler swaps attachments in under 60 seconds without leaving the operator's seat.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Zero Tail Swing</div><div class="feat-desc">The house stays within the track footprint in both directions — dig flush against walls, foundations, and retaining structures.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">36-Month Warranty</div><div class="feat-desc">The best warranty coverage in the compact excavator market, backed by US-based engineers available by phone for the life of the machine.</div></div></div></div>
-  </div>
-  <div id="tp-uses" class="tabpane">
-    <p style="color:var(--mt);margin-bottom:18px;font-size:.88rem">Common applications for the BULL 18-X Mini Excavator:</p>
-    <div class="use-chips"><span class="use-chip">Site Prep & Grading</span><span class="use-chip">Utility Trenching</span><span class="use-chip">Pool & Foundation Excavation</span><span class="use-chip">Landscaping</span><span class="use-chip">Fence & Post Installation</span><span class="use-chip">Stump & Tree Removal</span><span class="use-chip">Agricultural Drainage</span><span class="use-chip">Tight-Access Demolition</span></div>
-    <div style="margin-top:28px">
-      <p style="color:rgba(255,255,255,.6);font-size:.88rem;line-height:1.8">The BULL 18-X sets the benchmark for 1.8-ton compact excavators. Its Kubota D902 three-cylinder diesel engine — the same powerplant trusted by Takeuchi, Yanmar, and Bobcat — delivers 20HP of consistent, fuel-efficient power. Parker hydraulics translate that power into precise, responsive pilot controls that reduce operator fatigue across long working days.<br><br><br><br>The adjustable track chassis narrows to 42.9" to pass through standard gates and fence lines, then widens to 52.4" for maximum stability on uneven ground. Three digging buckets (8", 16", and 40"), a hydraulic thumb, and a complete tool kit ship with every machine — no extras to source separately.<br><br><br><br>With up to 36 months of warranty coverage — the most comprehensive in the 1.8-ton class — and lifetime free technical support from our US-based team, the BULL 18-X is built to work as hard as you do.</p>
-    </div>
-  </div>
-  <div id="tp-faq" class="tabpane">
-    <div class="faq-list"><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What is included with the machine?</span><span class="ft">+</span></div><div class="faq-a">Every BULL 18-X ships with 3 digging buckets (8", 16", 40"), a hydraulic thumb, thumb clamp clip, and a complete tool kit.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Does it require a CDL to transport?</span><span class="ft">+</span></div><div class="faq-a">The BULL 18-X weighs 3,925 lbs, well within standard trailer capacity for most Class B licensed operators. Consult your state DMV for specific towing requirements.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Is it compatible with third-party attachments?</span><span class="ft">+</span></div><div class="faq-a">Yes. The quick coupler is ISO-standard and compatible with augers, grapples, compaction wheels, rippers, and more.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>How long is the warranty?</span><span class="ft">+</span></div><div class="faq-a">Up to 36 months from purchase date, covering manufacturing defects in materials and workmanship. Lifetime free technical support is included.</div></div>
-  </div>
-  <div id="tp-ship" class="tabpane">
-    <div class="feat-list">
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Free Freight — Lower 48</div><div class="feat-desc">Free curbside freight delivery is included with every order to the lower 48 contiguous states. No freight surcharges are added at checkout.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Estimated Delivery: 5–10 business days</div><div class="feat-desc">From confirmed payment. Machines ship from US-based warehouse stock within 1–2 business days. A tracking number is emailed when the machine ships.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Curbside Delivery by Flatbed</div><div class="feat-desc">Your machine is delivered by flatbed truck to the curb or accessible area. A forklift or liftgate is strongly recommended at the delivery site. Our carrier will call to schedule a delivery window.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Inspect Before Signing</div><div class="feat-desc">Inspect the machine for freight damage before signing the delivery receipt. Note any visible damage on the paperwork and contact us within 48 hours if damage is found.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Alaska, Hawaii & International</div><div class="feat-desc">Contact us at (888) 517-9043 for a freight quote to Alaska, Hawaii, US territories, or international destinations.</div></div></div>
-    </div>
-  </div>
-  <div id="tp-warr" class="tabpane">
-    <div class="feat-list">
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">36 Months Warranty Coverage</div><div class="feat-desc">This machine carries 36 Months of warranty coverage from the date of purchase, covering manufacturing defects in materials and workmanship.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Lifetime Free Technical Support</div><div class="feat-desc">Call or email our US-based technical team for the life of your machine — at no charge, regardless of warranty status. Parts sourcing assistance included.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">How to Make a Warranty Claim</div><div class="feat-desc">Call (888) 517-9043 or email support@terravaultequipment.shop with your order number, machine serial number, and a description of the issue. Our team responds within 1 business day.</div></div></div>
-      <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">What Is Covered</div><div class="feat-desc">Manufacturing defects in components and assembly. Does not cover normal wear, consumables (filters, fluids, belts, tracks), damage from misuse or neglect, or modifications.</div></div></div>
-    </div>
-  </div>
+<!-- ── HIGHLIGHT NUMBERS ── -->
+<div style="background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:40px 0">
+  <div class="wrap"><div class="hl-strip"><div class="hl-card"><div class="hl-num">3,925 lbs</div><div class="hl-label">Operating Weight</div></div><div class="hl-card"><div class="hl-num">20 HP</div><div class="hl-label">Kubota D902 Engine</div></div><div class="hl-card"><div class="hl-num">81"</div><div class="hl-label">Max Dig Depth</div></div><div class="hl-card"><div class="hl-num">36 Mo.</div><div class="hl-label">Warranty Coverage</div></div><div class="hl-card"><div class="hl-num">Free</div><div class="hl-label">Freight — Lower 48</div></div><div class="hl-card"><div class="hl-num">$1,390</div><div class="hl-label">Package Value Included</div></div></div></div>
+</div>
 
-  <!-- Related -->
-  <div class="related">
-    <h3>You Might Also Like</h3>
-    <div class="pgrid"><div class="pc"><div class="pc-img"><div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">$3,300 Off</span></div><div class="pc-body"><p class="pc-cat">Skid Steer Loaders</p><h3 class="pc-name"><a href="huayee-hy480d.html">HUAYEE HY480D Mini Skid Steer</a></h3><div class="pc-price"><span class="pc-p">$7,999</span></div><a href="huayee-hy480d.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img src="https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Best Value</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="mms-ms15pro.html">MMS MS15PRO Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$6,899</span></div><a href="mms-ms15pro.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><div class="ar-ph"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 20a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm0 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm28-12h-4.2a24 24 0 0 0-1.6-5.8l3-3a2 2 0 0 0 0-2.8l-5.6-5.6a2 2 0 0 0-2.8 0l-3 3A24 24 0 0 0 40 12.2V8a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v4.2a24 24 0 0 0-5.8 1.6l-3-3a2 2 0 0 0-2.8 0l-5.6 5.6a2 2 0 0 0 0 2.8l3 3A24 24 0 0 0 12.2 28H8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.2a24 24 0 0 0 1.6 5.8l-3 3a2 2 0 0 0 0 2.8l5.6 5.6a2 2 0 0 0 2.8 0l3-3A24 24 0 0 0 28 51.8V56a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4.2a24 24 0 0 0 5.8-1.6l3 3a2 2 0 0 0 2.8 0l5.6-5.6a2 2 0 0 0 0-2.8l-3-3A24 24 0 0 0 55.8 40H60a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z"/></svg></div><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/HY18B-mini-excavator-01_93727e78-d8e0-4bd5-9927-1afb62bb58c2.jpg?v=1786090824" alt="HUAYEE HY18B Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Kubota Engine</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="huayee-hy18b.html">HUAYEE HY18B Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$13,599</span></div><a href="huayee-hy18b.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div></div>
+<!-- ── TABS: OVERVIEW / SPECS / INCLUDED ── -->
+<div style="background:var(--bg);border-bottom:1px solid var(--bd)">
+  <div class="tabs">
+    <button class="tab-btn" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="specs">Full Specifications</button>
+    <button class="tab-btn" data-tab="included">What's Included</button>
   </div>
 </div>
+
+<div class="wrap" style="padding-top:48px;padding-bottom:48px">
+
+  <!-- OVERVIEW TAB -->
+  <div class="tabpane" id="tab-overview">
+    <div style="max-width:840px">
+      <div class="sec-hd"><div class="sec-tag">Product Overview</div><h2>BULL 18-X Mini Excavator</h2></div>
+      <p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>The BULL 18-X is the best-selling machine in the BULL lineup — and it's earned that position by outperforming comparably priced excavators from established brands on every metric that matters to working contractors: engine reliability, hydraulic responsiveness, warranty coverage, and total cost of ownership.</p><p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>At the core is a Kubota D902 three-cylinder water-cooled diesel engine — the same powerplant specified by Takeuchi, Yanmar, and Bobcat across thousands of commercial machines worldwide. At 20HP, it delivers consistent, fuel-efficient output through an 8-hour shift without the fatigue-inducing power surges that plague cheaper single-cylinder alternatives. Parts are stocked at Kubota dealers nationwide, so downtime stays short.</p><p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>Parker hydraulics translate engine power into pilot controls that feel precise and low-effort from hour one. The dual-speed travel system (1.5 and 2.17 mph) keeps the machine maneuverable in tight quarters and productive on longer site traversals. The adjustable track chassis narrows to 42.9" for gate and fence access, then widens to 52.4" for maximum stability — in under 60 seconds, without tools.</p><p style='color:var(--mt);font-size:.92rem;line-height:1.78;margin-bottom:18px'>Every BULL 18-X ships with a package valued at $1,390: three digging buckets (8", 16", 40"), a hydraulic ripper, a hydraulic thumb, a quick coupler, and a complete tool kit. Zero tail swing keeps the house within the track footprint in all directions — dig flush against walls, foundations, and retaining structures without repositioning. The 36-month warranty is the most comprehensive coverage available in the 1.8-ton class.</p>
+    </div>
+
+    <div style="margin-top:56px">
+      <div class="sec-hd"><div class="sec-tag">Key Features</div><h2>Built For Working Contractors</h2></div>
+      <div class="feat-list">
+        <div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Kubota D902 Engine</div><div class="feat-desc">Japanese-built 3-cylinder diesel engine trusted across thousands of commercial machines worldwide. Proven reliability, low operating costs, and readily available parts at Kubota dealers nationwide.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Parker Hydraulic Pump</div><div class="feat-desc">American-engineered Parker hydraulics deliver smooth, responsive pilot controls with industry-leading flow efficiency. Operator fatigue drops noticeably after the first hour on site.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Variable Track Width</div><div class="feat-desc">Chassis narrows to 42.9" for gates and fence lines, widens to 52.4" for maximum stability — in 60 seconds, without tools. Access more job sites without relocating equipment.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Zero Tail Swing</div><div class="feat-desc">The house stays within the track footprint in both directions — dig flush against walls, foundations, and retaining structures without repositioning the machine.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">3 Digging Buckets Included</div><div class="feat-desc">8", 16", and 40" digging buckets ship with every machine — the most complete standard package in the 1.8-ton class. No extras to source separately.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Hydraulic Thumb</div><div class="feat-desc">Integrated hydraulic thumb grips rocks, stumps, pipes, and demolition debris with precision. Quick coupler allows swapping to any ISO-standard attachment in under 60 seconds.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">Lawn-Safe Rubber Tracks</div><div class="feat-desc">3–5 PSI ground pressure — comparable to a person standing. Rubber tracks minimize surface damage on finished lawns and paved surfaces.</div></div></div><div class="feat-item"><div class="feat-bullet">—</div><div class="feat-body"><div class="feat-title">36-Month Warranty</div><div class="feat-desc">The best warranty coverage in the compact excavator market, backed by US-based engineers available by phone for the life of the machine.</div></div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px">
+      <div class="sec-hd"><div class="sec-tag">Use Cases</div><h2>What This Machine Is Built For</h2></div>
+      <div class="uc-grid"><div class="uc-card"><div class="uc-icon">🏗</div><div class="uc-label">Site Prep & Grading</div></div><div class="uc-card"><div class="uc-icon">🔧</div><div class="uc-label">Utility Trenching</div></div><div class="uc-card"><div class="uc-icon">🌿</div><div class="uc-label">Pool & Foundation Excavation</div></div><div class="uc-card"><div class="uc-icon">🚜</div><div class="uc-label">Landscaping</div></div><div class="uc-card"><div class="uc-icon">🏠</div><div class="uc-label">Fence & Post Installation</div></div><div class="uc-card"><div class="uc-icon">⛏</div><div class="uc-label">Stump & Tree Removal</div></div><div class="uc-card"><div class="uc-icon">💧</div><div class="uc-label">Agricultural Drainage</div></div><div class="uc-card"><div class="uc-icon">🌾</div><div class="uc-label">Tight-Access Demolition</div></div></div>
+    </div>
+  </div>
+
+  <!-- SPECS TAB -->
+  <div class="tabpane" id="tab-specs">
+    <div class="sec-hd"><div class="sec-tag">Technical Data</div><h2>Complete Specifications</h2><p>All specifications are factory-verified. Contact us if you need data for a specific application.</p></div>
+    <div style="overflow-x:auto"><table class="spec-full"><tr><td class="spec-grp" colspan="2">Weight & Dimensions</td></tr><tr><td>Operating Weight</td><td>3,925 lbs (1,780 kg)</td></tr><tr><td>Overall Length (transport)</td><td>163 in (4,140 mm)</td></tr><tr><td>Overall Height (transport)</td><td>97 in (2,464 mm)</td></tr><tr><td>Min. Track Width</td><td>42.91 in (1,090 mm)</td></tr><tr><td>Max. Track Width</td><td>52.36 in (1,330 mm)</td></tr><tr><td>Track Width (rubber)</td><td>9.06 in (230 mm)</td></tr><tr><td>Track Length</td><td>60 in (1,524 mm)</td></tr><tr><td>Ground Pressure</td><td>3–5 PSI (rubber tracks)</td></tr><tr><td class="spec-grp" colspan="2">Engine & Hydraulics</td></tr><tr><td>Engine</td><td>Kubota D902 — 3-Cylinder Diesel</td></tr><tr><td>Horsepower</td><td>20 HP (14.9 kW)</td></tr><tr><td>Hydraulic Pump</td><td>Parker</td></tr><tr><td>Breakout Force</td><td>4,145 lbs (1,880 kg)</td></tr><tr><td>Travel Speed (low/high)</td><td>1.5 / 2.17 mph</td></tr><tr><td class="spec-grp" colspan="2">Digging Performance</td></tr><tr><td>Max Digging Depth</td><td>81 in (2,057 mm)</td></tr><tr><td>Max Digging Height</td><td>132 in (3,353 mm)</td></tr><tr><td>Max Dump Height</td><td>94 in (2,388 mm)</td></tr><tr><td>Reach at Ground Level</td><td>107 in (2,718 mm)</td></tr><tr><td>Tail Swing</td><td>Zero tail swing</td></tr><tr><td class="spec-grp" colspan="2">Blade & Additional</td></tr><tr><td>Blade Lift Height</td><td>11.42 in (290 mm)</td></tr><tr><td>Blade Width</td><td>56.7 in (1,440 mm)</td></tr><tr><td>Fuel Tank</td><td>3.4 gal (12.9 L)</td></tr><tr><td>Grade Climbing</td><td>30°</td></tr></table></div>
+    <p style="color:var(--mt);font-size:.78rem;margin-top:16px">Specifications subject to change without notice. Contact us to confirm specs for your specific configuration.</p>
+  </div>
+
+  <!-- INCLUDED TAB -->
+  <div class="tabpane" id="tab-included">
+    <div class="sec-hd"><div class="sec-tag">In The Box</div><h2>Everything Included At No Extra Charge</h2><p>Every machine ships with the complete package described below. No hidden extras to source separately.</p></div>
+    <div class="inc-grid"><div class="inc-item"><div class="inc-icon">⛏</div><div class="inc-text"><div class="inc-name">8" Digging Bucket</div><div class=inc-desc>Standard narrow trenching</div></div></div><div class="inc-item"><div class="inc-icon">⛏</div><div class="inc-text"><div class="inc-name">16" Digging Bucket</div><div class=inc-desc>General purpose digging</div></div></div><div class="inc-item"><div class="inc-icon">⛏</div><div class="inc-text"><div class="inc-name">40" Grading Bucket</div><div class=inc-desc>Backfill and grading</div></div></div><div class="inc-item"><div class="inc-icon">🔧</div><div class="inc-text"><div class="inc-name">Hydraulic Ripper</div><div class=inc-desc>Breakrock and compacted soil</div></div></div><div class="inc-item"><div class="inc-icon">✋</div><div class="inc-text"><div class="inc-name">Hydraulic Thumb</div><div class=inc-desc>Grab rocks, stumps, pipe</div></div></div><div class="inc-item"><div class="inc-icon">🔗</div><div class="inc-text"><div class="inc-name">Quick Coupler</div><div class=inc-desc>ISO-standard, swaps in <60s</div></div></div><div class="inc-item"><div class="inc-icon">🧰</div><div class="inc-text"><div class="inc-name">Complete Tool Kit</div><div class=inc-desc>Filters, wrenches, spares</div></div></div></div>
+    <div style="margin-top:28px;background:var(--s1);border:1px solid var(--bd);border-radius:10px;padding:24px 28px">
+      <p style="color:var(--mt);font-size:.88rem">All items above ship with the machine on a single freight delivery. Free freight is included to the lower 48 contiguous states. Delivery typically arrives within 5–10 business days. Our carrier will contact you to schedule a delivery window.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── FAQ ── -->
+<section style="padding:80px 0;background:var(--s1);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
+  <div class="wrap">
+    <div class="sec-hd"><div class="sec-tag">FAQ</div><h2>Frequently Asked Questions</h2><p>Real answers from our technical team. Call us if your question isn't here.</p></div>
+    <div class="faq-list" style="max-width:760px"><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What is included with the machine?</span><span class="ft">+</span></div><div class="faq-a">Every BULL 18-X ships with three digging buckets (8", 16", 40"), a hydraulic ripper, a hydraulic thumb, a quick coupler, and a complete tool kit — a package valued at $1,390.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Do I need a CDL to transport it?</span><span class="ft">+</span></div><div class="faq-a">No. The BULL 18-X weighs 3,925 lbs. Combined with a standard equipment trailer, the total typically stays well under the 26,000 lb CDL threshold. A 3/4-ton pickup truck is recommended for towing.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>Is it compatible with third-party attachments?</span><span class="ft">+</span></div><div class="faq-a">Yes. The quick coupler is ISO-standard and compatible with augers, grapples, compaction wheels, rippers, tilting buckets, and more from any manufacturer.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What does the 36-month warranty cover?</span><span class="ft">+</span></div><div class="faq-a">Manufacturing defects in materials and workmanship for up to 36 months from purchase date. Lifetime free technical support is included separately — call or email our US-based engineers for the life of the machine.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>How long does delivery take?</span><span class="ft">+</span></div><div class="faq-a">5–10 business days to the lower 48 contiguous states. Freight delivery is included at no charge. Our carrier will contact you to schedule a delivery window.</div><div class="faq-q" onclick="var a=this.nextElementSibling;a.style.display=a.style.display==='block'?'none':'block';this.querySelector('.ft').textContent=a.style.display==='block'?'−':'+';"><span>What engine oil and hydraulic fluid does it use?</span><span class="ft">+</span></div><div class="faq-a">The Kubota D902 uses standard 10W-30 or 15W-40 diesel engine oil. Hydraulic system uses ISO 46 hydraulic oil. Full specifications are in the included service manual.</div></div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="rev-outer" id="reviews">
+  <div class="wrap">
+    <div class="sec-hd"><div class="sec-tag">Customer Reviews</div><h2>BULL 18-X Mini Excavator — Owner Reviews</h2></div>
+    <div class="rev-header">
+  <div>
+    <div class="rev-score-num">4.9</div>
+    <div class="rev-stars-big">★★★★★</div>
+    <div class="rev-total">87 reviews</div>
+  </div>
+  <div class="rev-bars"><div class="rev-bar-row"><span class="rev-bar-lbl">5★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:82%"></div></div><span class="rev-bar-ct">71</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">4★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:12%"></div></div><span class="rev-bar-ct">10</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">3★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:4%"></div></div><span class="rev-bar-ct">3</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">2★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:1%"></div></div><span class="rev-bar-ct">1</span></div><div class="rev-bar-row"><span class="rev-bar-lbl">1★</span><div class="rev-bar-track"><div class="rev-bar-fill" style="width:1%"></div></div><span class="rev-bar-ct">1</span></div></div>
+</div>
+    <div class="rev-list"><div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Marcus T.</div><div class="rev-loc">San Antonio, TX</div></div>
+    <div class="rev-date">January 15, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Kubota Engine Is Bulletproof — 6 Months, Zero Issues</div>
+  <p class="rev-text">I've run this machine on three commercial landscaping contracts since buying in July. Six months, roughly 400 hours, zero mechanical issues. The Kubota D902 starts on the first crank every morning even in January cold. I've run Bobcat and Takeuchi machines — this engine is their equal. Parker hydraulics are genuinely smooth; my operator stopped complaining about wrist fatigue after the first week. At $15,900 with everything included, I don't understand what the competition is charging $28K for.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Jennifer R.</div><div class="rev-loc">Phoenix, AZ</div></div>
+    <div class="rev-date">March 2, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Variable Track Width Saved Me On A Tight Residential Job</div>
+  <p class="rev-text">Had a pool excavation job where I needed to squeeze through a 44-inch gate on both sides of the house. Narrowed the tracks in the driveway, drove through, widened up in the backyard. My old machine would've meant a crane lift over the fence. The zero tail swing let me dig within 8 inches of the block wall without touching it. Customer was thrilled, I saved half a day. This machine pays for itself in situations your old machine simply can't handle.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Brandon K.</div><div class="rev-loc">Nashville, TN</div></div>
+    <div class="rev-date">April 10, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★☆</div>
+  <div class="rev-title">Parker Hydraulics Are Noticeably Better Than Comparable Machines</div>
+  <p class="rev-text">I spent two weeks demoing a competitor's 1.8-ton machine before buying the BULL. The Parker hydraulics on this machine are in a different league — pilot controls are light, responsive, and consistent throughout the full range. No spongy mid-travel feel. Buckets fill clean and the thumb is precise enough for stone work. Docking one star only because the cab glass could be thicker — vibration resonance on hard digs is noticeable. Doesn't affect performance, just comfort.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Anthony S.</div><div class="rev-loc">Dallas, TX</div></div>
+    <div class="rev-date">June 8, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Warranty Is Real — They Actually Answered</div>
+  <p class="rev-text">Three months in, my hydraulic thumb started acting sluggish on cold mornings. Called the service line at 7am expecting voicemail. A technician picked up, walked me through a bleeding procedure on the phone in 15 minutes. Fixed. That's what lifetime technical support actually looks like. Machine has been flawless since. The 36-month warranty isn't marketing — there are real engineers behind it.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div>
+<div class="rev-card">
+  <div class="rev-head">
+    <div><div class="rev-author">Chris M.</div><div class="rev-loc">Denver, CO</div></div>
+    <div class="rev-date">August 12, 2026</div>
+  </div>
+  <div class="rev-stars">★★★★★</div>
+  <div class="rev-title">Zero Tail Swing Is Non-Negotiable For Urban Landscaping</div>
+  <p class="rev-text">I work almost exclusively in tight Denver backyards and alleyways. Zero tail swing is the single feature that makes this machine work for my business — I can spin 360° against a fence line without touching it. The rubber tracks don't tear up lawns (3-5 PSI is genuinely lawn-safe), and the variable width means I can access 90% of residential properties without a crane. I've turned down zero jobs since buying this machine.</p>
+  <div class="rev-badge">✓ Verified Purchase</div>
+</div></div>
+  </div>
+</section>
+
+<!-- ── RELATED PRODUCTS ── -->
+<section style="padding:80px 0;background:var(--s1);border-top:1px solid var(--bd)">
+  <div class="wrap">
+    <div class="sec-hd"><div class="sec-tag">More Equipment</div><h2>You Might Also Like</h2></div>
+    <div class="pgrid"><div class="pc"><div class="pc-img"><div class="ar ar-wide"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">$3,300 Off</span></div><div class="pc-body"><p class="pc-cat">Skid Steer Loaders</p><h3 class="pc-name"><a href="huayee-hy480d.html">HUAYEE HY480D Mini Skid Steer</a></h3><div class="pc-price"><span class="pc-p">$7,999</span></div><a href="huayee-hy480d.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><img src="https://www.mmsce.com/cdn/shop/files/MS15p.png?v=1781514634&width=1946" alt="MMS MS15PRO Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Best Value</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="mms-ms15pro.html">MMS MS15PRO Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$6,899</span></div><a href="mms-ms15pro.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div><div class="pc"><div class="pc-img"><div class="ar ar-wide"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/HY18B-mini-excavator-01_93727e78-d8e0-4bd5-9927-1afb62bb58c2.jpg?v=1786090824" alt="HUAYEE HY18B Mini Excavator" loading="lazy" onerror="this.style.visibility='hidden'"></div><span class="pc-tag">Kubota Engine</span></div><div class="pc-body"><p class="pc-cat">Mini Excavators</p><h3 class="pc-name"><a href="huayee-hy18b.html">HUAYEE HY18B Mini Excavator</a></h3><div class="pc-price"><span class="pc-p">$13,599</span></div><a href="huayee-hy18b.html" class="btn btn-outline btn-sm btn-full">View Details</a></div></div></div>
+  </div>
+</section>
 
 <footer>
   <div class="ft-in">
@@ -588,6 +739,37 @@ function initTabs(){
 document.addEventListener('DOMContentLoaded',function(){initGallery();initTabs();
   var px=localStorage.getItem('_gpx');
   if(px){var sc=document.createElement('script');sc.src='https://www.googletagmanager.com/gtag/js?id='+px;sc.async=true;document.head.appendChild(sc);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',px)}
+});
+</script>
+<script>
+// Tabs
+document.addEventListener('DOMContentLoaded',function(){
+  var tabs=document.querySelectorAll('.tab-btn');
+  if(tabs.length){
+    tabs[0].classList.add('active');
+    var firstPane=document.getElementById('tab-'+tabs[0].dataset.tab);
+    if(firstPane)firstPane.classList.add('active');
+  }
+  tabs.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var tgt=this.dataset.tab;
+      tabs.forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('.tabpane').forEach(function(p){p.classList.remove('active')});
+      this.classList.add('active');
+      var el=document.getElementById('tab-'+tgt);if(el)el.classList.add('active');
+    });
+  });
+  // Gallery thumbnails
+  var mainImg=document.getElementById('gMain');
+  document.querySelectorAll('.gthumb').forEach(function(th,i){
+    if(i===0)th.classList.add('active');
+    th.addEventListener('click',function(){
+      var src=this.querySelector('img').getAttribute('src');
+      if(mainImg){mainImg.src=src;mainImg.alt=this.querySelector('img').alt;}
+      document.querySelectorAll('.gthumb').forEach(function(t){t.classList.remove('active')});
+      this.classList.add('active');
+    });
+  });
 });
 </script>
 </body></html>
