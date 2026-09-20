@@ -28,12 +28,12 @@ h1,h2,h3,h4{font-family:var(--ff-head);line-height:1.1;text-wrap:balance;letter-
 p{line-height:1.72}
 
 /* ─ ASPECT RATIO IMAGE BOXES ─ */
-.ar{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--s1),var(--s2))}
+.ar{position:relative;overflow:hidden;background:var(--bg)}
 .ar::before{content:'';display:block;padding-top:75%}
 .ar.ar-wide::before{padding-top:62.5%}
 .ar.ar-sq::before{padding-top:100%}
 .ar.ar-hero::before{padding-top:56%}
-.ar>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.ar>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:transform .45s ease}
 .ar .ar-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;opacity:.12;pointer-events:none}
 .ar .ar-ph svg{width:56px;height:56px;fill:var(--txt)}
 .ar .ar-ph span{font-family:var(--ff-head);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--txt)}
@@ -76,7 +76,7 @@ p{line-height:1.72}
 .btn-full{width:100%;justify-content:center}
 
 /* ─ HERO ─ */
-.hero{position:relative;overflow:hidden;background:linear-gradient(140deg,var(--hn) 0%,var(--bg) 55%)}
+.hero{position:relative;overflow:hidden;background:var(--bg)}
 .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 100% at 72% 50%,color-mix(in srgb,var(--a) 6%,transparent),transparent 70%);pointer-events:none}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
 .hero-in{max-width:1400px;margin:0 auto;padding:80px 40px;display:grid;grid-template-columns:52fr 48fr;gap:64px;align-items:center;position:relative;z-index:1;min-height:600px}
@@ -168,7 +168,7 @@ p{line-height:1.72}
 .tcard-role{font-size:.75rem;color:var(--mt)}
 
 /* ─ CTA BLOCK ─ */
-.cta-blk{background:linear-gradient(135deg,var(--hn),var(--s2));border:1px solid var(--bd2);border-radius:16px;padding:72px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-blk{background:var(--bg);border:1px solid var(--bd2);border-radius:16px;padding:72px 48px;text-align:center;position:relative;overflow:hidden}
 .cta-blk::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 50% 0%,color-mix(in srgb,var(--a) 5%,transparent),transparent);pointer-events:none}
 .cta-blk h2{font-family:var(--ff-head);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;color:#fff;margin-bottom:14px;position:relative}
 .cta-blk p{color:var(--mt);max-width:460px;margin:0 auto 28px;font-size:.93rem;position:relative}
@@ -185,12 +185,12 @@ p{line-height:1.72}
 .pp-sticky{position:sticky;top:80px}
 .gal-main{border-radius:12px;overflow:hidden;border:1px solid var(--bd);margin-bottom:12px;background:var(--s2)}
 .gal-main .ar::before{padding-top:75%}
-.gal-main img#gMain{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .25s}
+.gal-main img#gMain{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:opacity .25s}
 .gal-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
 .gthumb{border-radius:8px;overflow:hidden;cursor:pointer;border:2px solid transparent;transition:border-color .18s,opacity .18s;opacity:.5;background:var(--s2)}
 .gthumb.active,.gthumb:hover{border-color:var(--a);opacity:1}
 .gthumb .ar::before{padding-top:75%}
-.gthumb .ar>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gthumb .ar>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .pi-tag{display:inline-flex;align-items:center;gap:6px;background:color-mix(in srgb,var(--a) 10%,transparent);border:1px solid color-mix(in srgb,var(--a) 22%,transparent);color:var(--a);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;padding:4px 12px;border-radius:4px;margin-bottom:14px}
 .pi h1{font-family:var(--ff-head);font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px}
 .pi-meta{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
@@ -284,7 +284,7 @@ select option{background:#1a1a22}
 .pay-opt-sub{color:var(--mt);font-size:.77rem;margin-top:2px;line-height:1.4}
 
 /* ─ PAGE SHELL ─ */
-.ph{background:linear-gradient(135deg,var(--hn) 0%,var(--bg) 100%);padding:72px 40px;border-bottom:1px solid var(--bd)}
+.ph{background:var(--bg);padding:72px 40px;border-bottom:1px solid var(--bd)}
 .ph-in{max-width:1400px;margin:0 auto}
 .ph h1{font-family:var(--ff-head);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#fff;margin-bottom:10px}
 .ph p{color:var(--mt);font-size:.95rem;max-width:500px}
@@ -508,7 +508,7 @@ footer{background:var(--s1);border-top:1px solid var(--bd);padding:64px 40px 28p
     <div>
       <div class="pp-sticky">
         <div class="gal-main">
-          <div class="ar ar-wide"><img id="gMain" src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571" alt="HUAYEE HY480D Mini Skid Steer" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></div>
+          <div class="ar ar-wide"><img id="gMain" src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571" alt="HUAYEE HY480D Mini Skid Steer" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'" style="width:100%;height:100%;object-fit:contain;position:absolute;top:0;left:0"></div>
         </div>
         <div class="gal-thumbs"><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-01.jpg?v=1786180571" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-02.jpg?v=1786181094" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-03.jpg?v=1786181040" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-04.jpg" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-05.jpg" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-06.jpg" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-07.jpg" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-08.jpg?v=1786180366" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-09.jpg" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div><div class="gthumb"><div class="ar ar-sq"><img src="https://cdn.shopify.com/s/files/1/0688/4517/4941/files/hy480d-mini-skid-steer-loader-10.jpg?v=1786180366" alt="HUAYEE HY480D Mini Skid Steer" loading="lazy" onerror="this.onerror=null;this.style.opacity='0.3';this.parentElement.style.background='rgba(255,255,255,0.04)';this.parentElement.style.display='flex';this.parentElement.style.alignItems='center';this.parentElement.style.justifyContent='center'"></div></div></div>
       </div>
